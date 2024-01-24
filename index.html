@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--teilwind and daisy-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+       
+         <!--hoky fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+       .font-manrope{font-family: 'Manrope', sans-serif;}
+    </style>
+</head>
+    <body class="font-manrope">
+        <header class="md:container md:mx-auto">
+          <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm items-center dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>home</a></li>
+                        <li><a>about</a></li>
+                        <li><a>pages</a></li>
+                        <li><a>blog</a></li>
+                        <li><a>contact</a></li>
+
+                        <label class="mt-2 p-2 swap swap-rotate bg-slate-300 ">
+      
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" />
+                            
+                            <!-- sun icon -->
+                            <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                            
+                            <!-- moon icon -->
+                            <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                            
+                          </label>
+        
+                    </ul> 
+                </div>
+                  <a class="btn btn-ghost text-800  lg: text-3xl border-r-lime-50">Hockey’s</a>
+                </div>
+                <div class="navbar-start  hidden lg:flex">
+                  <ul class="menu menu-horizontal r px-1 text-lg">
+                    <li class="text-red-700 text-xl"><a>home</a></li>
+                    <li><a>about</a></li>
+                    <li><a>pages</a></li>
+                    <li><a>blog</a></li>
+                    <li><a>contact</a></li>
+                    
+                </ul>               
+            </div>
+                <img  class="mr-5 " src="Frame (4).svg" alt="">
+              <div class="navbar-end w-auto ">
+                    <a class="btn btn-error text-stone-50 p-4  ">Get Ticket</a>
+                </div>
+              </div>
+          </nav>
+     <header>
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+  
+            </div> 
+          </div>
+     </header>
+     <main class="container mx-auto">
+      <section class="text-center my-24">
+                <h2 class="text-5xl font-extrabold mb-6">Professional <span class="text-cyan-400"> Hockeys </span> Club</h2>
+                <p class="lg:mx-w-3xl mx-auto text-gray-400">Paris will remain out of bounds for Indian women's hockey team that eschewed its crisp, short-passing game <br>
+                     to bow out of 2024  </p>
+        <!--border reltd-->
+        <!--border1-->
+       <div class="flex mt-6 flex-col lg:flex-row items-center gap-6 justify-center">
+        <div class=" ">
+            <div class="relative min-w-32 min-h-32 ">
+                <img class=" absolute flex items-center " src="Group 9.jpg" alt="">
+                <p class=" absolute text-4xl left-6 top-9 font-extrabold ">87%</p>         
+            </div> 
+          <h4 class="font-extrabold text-base mt-2 ">Prayer Facility</h4>
+          <p class="text-slate-600 mt-3">always pray namaj  <br>
+            
+             </p>
+        </div>
+        <div class=" ">
+            <div class="relative min-w-32 min-h-32 ">
+                <img class=" absolute flex items-center " src="Group 9.svg" alt="">
+                <p class=" absolute text-4xl left-6 top-9 font-extrabold ">95%</p>         
+            </div> 
+          <h4 class="font-extrabold text-base mt-2 ">Experienced Coach</h4>
+          <p class="text-slate-600 mt-3">always pray namaj  <br>
+            
+             </p>
+        </div>
+        <div class=" ">
+            <div class="relative min-w-32 min-h-32 ">
+                <img class=" absolute flex items-center " src="Group 9 (1).svg" alt="">
+                <p class=" absolute text-4xl left-6 top-9 font-extrabold ">90%</p>         
+            </div> 
+          <h4 class="font-extrabold text-base mt-2 ">Senior Player</h4>
+          <p class="text-slate-600 mt-3">always pray namaj  <br>
+            
+             </p>
+        </div>
+        <div class=" ">
+            <div class="relative min-w-32 min-h-32 ">
+                <img class=" absolute flex items-center " src="Group 9 (2).svg" alt="">
+                <p class=" absolute text-4xl left-6 top-9 font-extrabold ">80%</p>         
+            </div> 
+          <h4 class="font-extrabold text-base mt-2 ">Training Ground</h4>
+          <p class="text-slate-600 mt-3">always pray namaj  <br>
+            
+             </p>
+        </div>
+       </div>
+    </section>
+       <!--program section-->
+      <section class="text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-6t">Program <span class="text-gray-500">Sections</span></h2>
+         <p class="text-slate-500 mt-6 mb-10">The top three sides from this tournament qualified for the Paris Olympics. <br>
+             By finishing third, Japan, booked their berth.</p>
+            
+                
+            <!--3-pictures-->
+        
+            <!--1st-->
+             <div class="flex gap-6 flex-col lg:flex-row">
+               <div class="pb-10 pl-10 w-full  bg-[url('./Images/2.png')]  bg-cover bg-center bg-no-repeat flex flex-col min-h-[338px] items-start justify-end">
+                <!-- <img class="ml-16" src="Images/2.png" alt=""> -->
+                <h3 class=" text-slate-50 mt-24 font-extrabold text-3xl">Junior Program</h3>
+                  <p class=" text-slate-50 text-start pt-4 pb-6">A minute and a half from the  Salima Tete got the best chance for India <br>
+                     to equalise but, with only the goalkeeper to beat,</p>
+                     <a class=" btn btn-error text-stone-50 p-4 ">Register Now!</a>
+                </div>
+               <!--2nd-->
+               <div class="pb-10 pl-10 w-full  bg-[url('./Images/3.png')]  bg-cover bg-center bg-no-repeat flex flex-col min-h-[338px] items-start justify-end">
+                <!-- <img class="ml-16" src="Images/2.png" alt=""> -->
+                <h3 class=" text-slate-50 mt-24 font-extrabold text-3xl">Junior Program</h3>
+                  <p class=" text-slate-50 text-start pt-4 pb-6">A minute and a half from the  Salima Tete got the best chance for India <br>
+                     to equalise but, with only the goalkeeper to beat,</p>
+                     <a class=" btn btn-error text-stone-50 p-4 ">Register Now!</a>
+                </div>
+              </div>
+              <div class=" mt-6">
+                <div class="pb-10 pl-10 w-full  bg-[url('./Images/4.png')] bg-cover bg-center bg-no-repeat flex flex-col min-h-[338px] items-start justify-end">
+                 <!-- <img class="ml-16" src="Images/2.png" alt=""> -->
+                 <h3 class=" text-slate-50 mt-24 font-extrabold text-3xl">Junior Program</h3>
+                   <p class=" text-slate-50 text-start pt-4 pb-6">A minute and a half from the  Salima Tete got the best chance for India <br>
+                      to equalise but, with only the goalkeeper to beat,</p>
+                      <a class=" btn btn-error text-stone-50 p-4 ">Register Now!</a>
+                 </div>
+               </div>
+ 
+      </section>
+     <!--card section-->
+     <section class="text-center my-24 ">
+        <h2 class="text-5xl font-extrabold mb-6">Our New <span class="text-red-500">Products </span></h2>
+         <p class="text-slate-500 mt-4">In marketing, a product is an object, or system, or service <br>
+             made available for consumer use as of the consumer demand</p>
+            
+           
+              <!--card 1-->
+             
+                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center gap-6 mt-20">
+                <div class="card card-side bg-base-100 shadow-xl gap-0">
+                  <figure><img class="w-24" src="Images/5.png" alt="Movie"/></figure>
+                  <div class="card-body ">
+                    <div class="flex gap-x-1">
+                      <img  src="star.png" alt="">5.0
+                      <img src="eye.png" alt="">20
+                      <img src="heart.png" alt="">200
+                    </div>
+                    <p class="text-sm text-start font-bold">World Cup Flags Football</p>
+                    <p class="text-xs text-start">here click to phurches</p>
+                    <p class="text-red-600 text-xs text-start">Price - $10.00  <img class="inline-grid text-start" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                  </div>
+                </div>
+              
+                <!--card 2-->
+              
+                <div class="card card-side bg-base-100 shadow-xl gap-0">
+                  <figure><img class="w-24" src="Images/6.png" alt="Movie"/></figure>
+                  <div class="card-body ">
+                    <div class="flex gap-x-1">
+                      <img  src="star.png" alt="">5.0
+                      <img src="eye.png" alt="">20
+                      <img src="heart.png" alt="">200
+                    </div>
+                    <p class="text-sm text-start font-bold">World Cup Flags Football</p>
+                    <p class="text-xs text-start">here click to phurches</p>
+                    <p class="text-red-600 text-xs text-start">Price - $100.00  <img class="inline-grid" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                  </div>
+                </div>
+             <!--card 3-->
+                <div class="card card-side bg-base-100 shadow-xl gap-0">
+                    <figure><img class="w-24" src="Images/7.png" alt="Movie"/></figure>
+                    <div class="card-body ">
+                      <div class="flex gap-x-1">
+                        <img  src="star.png" alt="">5.0
+                        <img src="eye.png" alt="">20
+                        <img src="heart.png" alt="">200
+                      </div>
+                      <p class="text-sm font-bold text-start">Cup For HOcky</p>
+                      <p class="text-xs text-start">here click to phurches</p>
+                      <p class="text-red-600 text-xs text-start">Price - $100.00  <img class="inline-grid" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                    </div>
+                  </div>
+                  <!--card 4-->
+                  <div class="card card-side bg-base-100 shadow-xl gap-0">
+                    <figure><img class="w-24" src="Images/8.png" alt="Movie"/></figure>
+                    <div class="card-body ">
+                      <div class="flex gap-x-1 ">
+                        <img  src="star.png" alt="">5.0
+                        <img src="eye.png" alt="">20
+                        <img src="heart.png" alt="">200
+                      </div>
+                      <p class="text-sm font-bold text-start">World Cup Flags Football</p>
+                      <p class="text-xs text-start">here click to phurches</p>
+                      <p class="text-red-600 text-xs text-start">Price - $150.00  <img class="inline-grid" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                    </div>
+                  </div>
+                  <div class="card card-side bg-base-100 shadow-xl gap-0">
+                      <figure><img class="w-24" src="Images/9.png" alt="Movie"/></figure>
+                      <div class="card-body ">
+                        <div class="flex gap-x-1">
+                          <img  src="star.png" alt="">5.0
+                          <img src="eye.png" alt="">20
+                          <img src="heart.png" alt="">200
+                        </div>
+                        <p class="text-sm font-bold text-start">World Cup Flags Football</p>
+                        <p class="text-xs text-start">here click to phurches</p>
+                        <p class="text-red-600 text-xs text-start">Price - $100.00  <img class="inline-grid" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                      </div>
+                    </div>
+                    <!--card 6-->
+                    <div class="card card-side bg-base-100 shadow-xl gap-0">
+                      <figure><img class="w-24" src="Images/10.png" alt="Movie"/></figure>
+                      <div class="card-body ">
+                        <div class="flex gap-x-1">
+                          <img  src="star.png" alt="">5.0
+                          <img src="eye.png" alt="">20
+                          <img  src="heart.png" alt="">200
+                        </div>
+                        <p class="text-sm font-bold text-start">World Cup Flags Football</p>
+                        <p class="text-xs text-start">here click to phurches</p>
+                        <p class="text-red-600 text-xs text-start">Price - $1000.00  <img class="inline-grid" src="delivery.svg" alt=""> Delivery Fee : Free </p>
+                      </div>
+                    </div>
+                
+              </div>
+        </section>
+                
+    <!--clients section-->
+    <section class="hidden lg:block text-center my-24">
+        <h2 class="text-5xl font-extrabold mb-6">Clients  <span class="text-yellow-500">Question </span></h2>
+         <p class="text-slate-500 mt-4">In marketing, a product is an object, or system, or service <br>
+             made available for consumer use as of the consumer demand</p>
+            
+           
+             
+           <div class="card card-side bg-base-100 shadow-xl mt-10">
+            <figure><img class="w-full h-max " src="Images/11.png" alt="Movie"/></figure>
+            <div class="card-body mt-2">
+              <h2 class="card-title  ml-4 mt-10">Our Equipment</h2>              
+               <p class="mr-80 text-start ml-4 ">Dolor sit amet consectetur. Ut urna diam. and alhs jdhab dhds 
+                 Elit elit enim  <input class="collapse collapse-content ml-16 " type="radio" name="my-accordion-3" checked="checked" /></p>
+                
+
+                 <div class="collapse collapse-plus bg-base-100">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-sm font-bold  text-start">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus mb-2 bg-base-100">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-sm font-bold text-start">
+                        Private Lessons
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-100">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title text-sm font-bold text-start">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                 
+
+                  <div class="collapse collapse-plus bg-base-100">
+                    <input type="radio" name="my-accordion-3" checked="checked" /> 
+                    <div class="collapse-title text-sm font-bold text-start">
+                      Booking
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-plus bg-base-100">
+                    <input type="radio" name="my-accordion-3" /> 
+                    <div class="collapse-title mb-10 text-sm font-bold text-start">
+                      Pricings
+                    </div>
+                    <div class="collapse-content"> 
+                      <p>hello</p>
+                    </div>
+                  </div>
+
+            </div>
+            </div>
+          </div>
+           
+           
+           
+           
+           
+       
+              </div>
+            </section>
+     <!--form section-->
+    <section class="text-center my-24 ">
+         <h2 class="text-5xl font-extrabold mb-6">Get In  <span class="text-green-500">Touch</span></h2>
+          <p class="text-gray-600">A form is a document which contains blank spaces in which one can write or select an option. <br>
+             Forms can be distributed to several </p>
+       
+            
+<div class="main-container flex flex-col lg:flex-row  justify-center mt-20">
+    <!-- left section -->
+    <div class="left-main w-full lg:w-96 h-900px ">
+        <div class="w-60  m-auto mt-10">
+
+            <!-- first -->
+            <div class="w-60 h-60 border py-10 mb-8 bg-slate-100  ">
+                <img class="pl-8" src="phn.svg" alt="">
+                <p class="w-48 pt-4 font-extrabold ">
+                    Phone Number :
+                    <br>
+                   <span class="text-sm">(+62) 123-321-543</span> 
+                </p>
+            </div>
+            <div class="w-60 h-60 border py-10 mb-8 bg-slate-100" > 
+                 <img class="pl-8" src="msg.svg" alt="">
+                 <p class="w-48 pt-4 font-extrabold">
+                   <span class="text-start ">Email :</span> 
+                    <br>
+                    hockeys@support.com
+                 </p>
+            </div>
+
+            <div class="w-60 h-60  py-10 border bg-slate-100" > 
+                 <img class="pl-8" src="google-maps 1.svg" alt="">
+                 <p class="w-48 pt-4 font-extrabold">
+                    Email :
+                    <br>
+                    hockeys@support.com
+                 </p>
+            </div>
+            
+        </div>
+    </div>
+<!-- right section -->
+<div class="right-main">
+    <div class="flex flex-col lg:flex-row">
+        <div >
+            <p class="font-extrabold text-start m-2">Your name</p>
+            <input class="h-16 w-80 border bg-slate-100" type="text" name="" id="" placeholder="Enter your full name">
+        </div>
+        <div>
+            <p class="font-extrabold text-start m-2">Your Email</p>
+            <input class="h-16 w-80 border bg-slate-100" type="email" name="" id="" placeholder="Enter your email">
+        </div>
+    </div>
+    
+    <div class="flex flex-col lg:flex-row">
+        <div>
+            <p class="font-extrabold text-start m-2">subject</p>
+            <input class="h-16 w-80 border bg-slate-100" type="text" name="" id="" placeholder="Enter your subject">
+        </div>
+        <div class="">
+            <p class="font-extrabold text-start m-2">phone number</p>
+            <input class="h-16 w-80 border bg-slate-100" type="email" name="" id="" placeholder="Enter your phone number">
+        </div>
+    </div>
+    <!-- text box -->
+    <div class="mt-11">
+        <p class="font-extrabold m-2">Message</p>
+    <textarea class="w-full border bg-slate-100" name="" id="" cols="30" rows="20"> Write your message</textarea>
+    <br>
+    <div class="navbar-end w-auto mt-1">
+        <a class="btn btn-error text-stone-50   ">Send Massage</a>
+    </div>
+    </div>
+</div>
+</div>
+       
+          <!--icons-->
+       <div class="bg-slate-200 h-36 w-full mt-16">
+        <h3 class="font-extrabold mt-10 pt-8">Social Media</h3>
+         <img class="m-auto" src="Social.svg" alt="">
+       </div>
+
+       
+     </section>
+    </main>
+        <!--footer section-->
+        <footer class="footer p-16  bg-black ">
+             <nav>
+                <header class="text-3xl text-white font-bold">Get In Touch</header>
+                <p class="text-gray-400 mt-2">A minute and a half from the <br>
+                     final hooter, an unmarked  <br>
+                     Salima Tete got the best chance  <br>
+                     for India to equalise but, <br>
+                </p>
+               <p class="text-slate-50 flex mt-2"><img class="pr-3" src="Frame (2).png" alt=""> hockeys@support.com</p>
+                <p class="text-slate-50 flex mt-2 "><img class="pr-3" src="Frame (3).png" alt=""> (+62) 123-321-543</p>
+            </nav>
+        
+        
+          <div class="flex flex-row lg:flex-col">
+            <nav>
+                <header class="footer-title text-white">Company</header> 
+                <a class="link link-hover text-white pt-1">About us</a>
+                <a class="link link-hover text-white pt-1">Leadership</a>
+                <a class="link link-hover text-white pt-1"> Careers</a>
+                <a class="link link-hover text-white pt-1">News & Article</a>
+                <a class="link link-hover text-white pt-1">Legal Notice</a>
+              </nav> 
+              <nav>
+                <header class="footer-title text-white">Support</header> 
+                <a class="link link-hover text-white pt-1">Help Center</a>
+                <a class="link link-hover text-white pt-1">FAQ</a>
+                <a class="link link-hover text-white pt-1">Ticket Support</a>
+                <a class="link link-hover text-white pt-1">Contact Us</a>
+              </nav> 
+          </div>
+            <nav>
+              <header class="footer-title text-white">Services</header> 
+              <a class="link link-hover text-white pt-1">Academy</a>
+              <a class="link link-hover text-white pt-1">Group Lessony</a>
+              <a class="link link-hover text-white pt-1">Private Lesson</a>
+              <a class="link link-hover text-white pt-1">Hockeys for kids</a>
+              <a class="link link-hover text-white pt-1">Hockeys for Adult</a>
+            </nav>
+          </footer>
+          
+          
+          
+    
+</body>
+</html>
